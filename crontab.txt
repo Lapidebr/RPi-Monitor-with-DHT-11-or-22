@@ -1,0 +1,2 @@
+#job para coletar temperatura para rpimonitor
+*/1 * * * * sudo /home/pi/rpi_dht11.py 11 25

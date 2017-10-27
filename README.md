@@ -6,15 +6,17 @@ Primeiro certifique seu seu sensor esta operando siga este guia https://www.fili
 
 Apos testar o sensor voce deve usar o script  para gerar os valores de temperatura 
 https://github.com/Lapidebr/RPi-Monitor-with-DHT-11-or-22/blob/master/rpi_dht11.py
-Apos tstar o scrupty neste formato sudo /home/pi/rpi_dht11.py 11 25 
-onde 11 é tipo do seu sensor e 25 é pino GPIO correpsondente. o resultado gera um log em /var/log/dht11.log
+Após testar o script neste formato sudo /home/pi/rpi_dht11.py 11 25 
+onde 11 é tipo do seu sensor e 25 é pino GPIO correpsondente. O resultado gera um log em /var/log/dht11.log
 para verificar o resultado use: cat /var/log/dht11.log o resultado deve ser como este Temp = 24 *C, Hum = 46 %
 
 
 Use cron  gerar uma nova tarefa
 crontrab -e
-Crie uma tarefa
+Crie uma tarefa*
 */1 * * * * sudo /home/pi/rpi_dht11.py 11 25
+
+*atenção ao  local onde salvou seu arquivo "rpi_dht11.py" 
 
 
 Configuraçao do arquivo /etc/rpimonitor/template/dht11.conf 

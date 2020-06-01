@@ -1,3 +1,5 @@
+**Descontinuado mantido apenas para fins de historico**  > atualizado neste [LINK(AINDA PEDENTE)](https://github.com/)
+
 **PT_BR**
 Auxilio para para ativar Sensor DHT 11 ou 22 no RPi-Monitor no Raspberry Pi. RPI monitor RPi-Monitor: http://rpi-experiences.blogspot.com.br/
 
